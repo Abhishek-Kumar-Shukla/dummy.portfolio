@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Spectral", serif;
+}
+
+h1 {
+    color: #4e1f00;
+    margin-top: 15px;
+    line-height: 2;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.125rem;
+    /*  50/16=3.125  */
+}
+
+h2 {
+    color: #4e1f00;
+    margin-top: 15px;
+    font-size: 2.1875rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+    color: #4e1f00;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5625rem;
+}
+
+p {
+    color: #4e1f00;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9375rem;
+    line-height: 2;
+}
+
+hr {
+    border: dotted #4e1f00 5px;
+    border-bottom: none;
+    width: 5%;
+    margin: 100px auto;
+}
+
+a{
+    color: #4e1f00;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5625rem;
+    margin:15px 30px;
+    text-decoration: none;
+}
+a:hover{
+    color: #a59d05;
+}
+
+.top-container {
+    background-color: #72bf78;
+    /* border:solid 10px; */
+    padding-top: 150px;
+    position: relative;
+    /* Apni Old position ke according margin dega
+                                   ...for example left: 50px; diya to right move krega 
+                                   kyunki apni old position me left side usne 50px margin diya to lagega ki right move kra h 
+                                   but aisa nhi h usne bas apni old position ke acc margin diya h */
+}
+
+.middle-container {
+    background-color: #a0d683;
+    padding: 100px 0;
+    /* border:solid 20px;
+    margin: 0 0 0 260px;
+    width: 200px;
+    height: 200px; */
+}
+
+.bottom-container {
+    background-color: #d3ee98;
+    padding:60px 0 20px;
+    /* margin: 0 0 0 500px;
+    border:solid 10px;
+    width: 200px;
+    height: 200px; */
+}
+
+.top-cloud {
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    /*absolute psoitioning se document flow se bahar aa jaega aur 
+                                    Parent (agar nhi h to body se ) se left margin aur top margin milega*/
+    left: 900px;
+    top: 10px;
+}
+
+.bottom-cloud {
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 250px;
+    right: 900px;
+}
+
+/* 
+Margin order moves from top clockwise */
+/* 
+Use margin: 0 auto 0 auto ; to center a div vertically or just margin: 0 auto;    
+if you don't wanna use text-align
+
+for text align---
+When we have some text and other inline elements on a page, each line of content is treated as a line box.
+  */
+
+.mountain {
+    height: 400px;
+    width: 600px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    overflow: auto;
+    /*    parent wraps the floated children   */
+}
+
+.skill_pic {
+    width: 25%;
+    float: left;
+    margin-right: 50px;
+}
+
+.skill2_pic {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.abhi {
+    text-decoration: underline;
+}
+
+.intro {
+    width: 30%;
+    margin: auto;
+}
+
+.profile_pic {
+    width: 300px;
+    height: 300px;
+}
+
+#message {
+    width: 30%;
+    margin: 20px auto 40px;
+}
+
+@import url("https://fonts.googleapis.com/css2?Roboto&display=swap");
+
+#btn {
+    text-decoration: none;            /*Anchor tags have underlined by default*/ 
+    display: block;                   /*Anchor tags are inline by default*/
+    margin: 70px auto 10px;
+    cursor: pointer;
+    border: solid rgb(187, 204, 0);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    transition: 1346ms;
+    width: 335px;
+    box-shadow: rgb(0, 0, 0) 0px 1px 32px -4px;
+    border-radius: 50px;
+    background: linear-gradient(296deg,
+            rgb(0, 128, 255) 0%,
+            rgb(172, 0, 181) 65%);
+    --hover-bgc: #5824a1;
+    --hover-borderc: #a0d683;
+}
+
+#btn:hover {
+    color: rgb(255, 255, 255);
+    width: 337px;
+    background: rgb(88, 36, 161) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-color: rgb(160, 214, 131);
+    border-width: 1.6px;
+    border-style: solid;
+}
+
+.watermark{
+    font-size: 12px;
+    padding: 30px 0 0;
+    margin:30px auto 0;
+}
+
+
+
+/* 🚫 You can't reliably use:   for inline elements
+
+width / height
+
+margin: auto
+
+margin-top / margin-bottom
+
+padding-top / padding-bottom
+
+box-shadow, sometimes
+
+border-radius (partially) */
